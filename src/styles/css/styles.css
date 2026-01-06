@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+:root {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --primary-blue: #3D8EDA;
+  --main-text-color: #000;
+  --btn-icon-bg-color: #ebebeb;
+  --btn-icon-border-color: #DEDEDE;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.67);
+  box-shadow: inset 0px 12px 24px 0px rgba(0, 0, 0, 0.12), 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+}
+header .page-heading {
+  font-family: var(--font-montserrat);
+  font-size: 24px;
+}
+header .logo img {
+  left: 20%;
+}
+
+body {
+  background: url(../../images/top-background.svg) no-repeat;
+  background-position: left top;
+  font-family: var(--font-roboto) !important;
+  color: var(--main-text-color) !important;
+  background-color: #fafafa !important;
+}
+
+main {
+  background: url(../../images/bottom-background.png) no-repeat;
+  background-position: right bottom;
+}
+
+.fs--1 {
+  font-size: 0.88rem;
+}
+
+.btn {
+  box-shadow: none !important;
+  outline: none !important;
+  fill: var(--primary-blue);
+}
+.btn.btn-outline-primary {
+  font-size: 13px;
+}
+.btn.icon-button {
+  padding: 3px;
+  background-color: var(--btn-icon-bg-color);
+  border-left: 1px solid var(--btn-icon-border-color);
+  height: 28px;
+  width: 28px;
+  border-radius: 0;
+}
+.btn.icon-button .close-icon {
+  width: 14px;
+  height: 14px;
+}
+.btn.active {
+  fill: #c8c7c7;
+}
+
+.border.border-custom {
+  border-color: var(--btn-icon-border-color);
+}
+
+input {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.card span {
+  font-weight: 500;
+}
+
+#listView .card .card__image {
+  width: 86px;
+  height: 86px;
+}
+
+#cardsView .card {
+  flex: 0 0 25%;
+  min-width: 203px;
+  max-width: 235px;
+}
+#cardsView .card .fs-7 {
+  font-size: 12px;
+}
+#cardsView .card:nth-child(-n+4) {
+  margin-top: 0 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.qs-datepicker .qs-controls {
+  background: none !important;
+  padding-top: 13px;
+  padding-bottom: 9px;
+}
+.qs-datepicker .qs-day {
+  color: var(--main-text-color);
+}
+
+@media (max-width: 575px) {
+  .body {
+    background-size: 47% auto;
+  }
+  .container-custom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+  .body {
+    background-size: 40% auto;
+  }
+  .container-custom {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .body {
+    background-size: 40% auto;
+  }
+  .container-custom {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
